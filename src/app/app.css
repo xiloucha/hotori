@@ -1,0 +1,1081 @@
+:host {
+    display: block;
+    min-height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+  
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .app {
+    min-height: 100vh;
+    background:
+      linear-gradient(
+        rgba(255, 252, 244, 0.9),
+        rgba(248, 242, 230, 0.96)
+      );
+    color: #4a4339;
+  }
+  
+  
+  /* =========================
+     HEADER
+  ========================= */
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 100%;
+    max-width: 760px;
+  
+    margin: 0 auto;
+    padding: 22px 22px 10px;
+  }
+  
+  .logo {
+    padding: 0;
+  
+    border: none;
+    background: none;
+  
+    color: #4a4339;
+  
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+  
+    cursor: pointer;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 18px;
+  }
+  
+  .header-nav button {
+    padding: 4px 0;
+  
+    border: none;
+    border-bottom: 1px solid transparent;
+  
+    background: none;
+  
+    color: #9b9182;
+  
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  
+    cursor: pointer;
+  }
+  
+  .header-nav button.active {
+    color: #4a4339;
+    border-bottom-color: #7d7264;
+  }
+  
+  
+  /* =========================
+     MAIN
+  ========================= */
+  
+  .main {
+    width: 100%;
+    max-width: 760px;
+  
+    margin: 0 auto;
+    padding: 20px 22px 60px;
+  }
+  
+  
+  /* =========================
+     HOME
+  ========================= */
+  
+  .home {
+    min-height: calc(100vh - 100px);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  
+  .home-mark {
+    margin-bottom: 18px;
+  
+    color: #aaa092;
+    font-size: 18px;
+  }
+  
+  .home h1 {
+    margin: 0;
+  
+    color: #40392f;
+  
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+  }
+  
+  .subtitle {
+    margin: 12px 0 34px;
+  
+    color: #817769;
+  
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    min-height: 44px;
+  
+    padding: 0 22px;
+  
+    border-radius: 2px;
+  
+    cursor: pointer;
+  }
+  
+  .primary-button {
+    border: 1px solid #62584c;
+    background: #62584c;
+  
+    color: #fffdf8;
+  
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+  
+  .secondary-button {
+    border: 1px solid rgba(80, 65, 45, 0.25);
+    background: rgba(255, 252, 244, 0.35);
+  
+    color: #655c50;
+  
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  
+  .primary-button:active,
+  .secondary-button:active {
+    transform: translateY(1px);
+  }
+  
+  .primary-button:disabled,
+  .secondary-button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  
+  .full-button {
+    width: 100%;
+  }
+  
+  
+  /* =========================
+     LANGUAGE
+  ========================= */
+  
+  .language {
+    margin-top: 46px;
+  }
+  
+  .language-label {
+    margin-bottom: 10px;
+  
+    color: #a19789;
+  
+    font-size: 9px;
+    letter-spacing: 0.15em;
+  }
+  
+  .language-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  
+  .language-buttons button {
+    padding: 5px 0;
+  
+    border: none;
+    border-bottom: 1px solid transparent;
+  
+    background: none;
+  
+    color: #9a9081;
+  
+    font-size: 11px;
+  
+    cursor: pointer;
+  }
+  
+  .language-buttons button.active {
+    color: #4a4339;
+    border-bottom-color: #716759;
+  }
+  
+  
+  /* =========================
+     ABOUT HOTORI
+  ========================= */
+  
+  .about-hotori {
+    width: 100%;
+    max-width: 320px;
+  
+    margin-top: 34px;
+    padding: 0 8px;
+  
+    text-align: center;
+  
+    color: #9b9287;
+  
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  
+  .about-title {
+    margin-bottom: 4px;
+  
+    color: #9b9287;
+  
+    font-size: 9px;
+    letter-spacing: 0.12em;
+  
+    opacity: 0.8;
+  }
+  
+  .about-text {
+    width: 100%;
+    max-width: 300px;
+  
+    margin: 0 auto;
+  
+    color: #9b9287;
+  
+    opacity: 0.8;
+  
+    overflow-wrap: anywhere;
+  }
+  
+  
+  /* =========================
+     SESSION
+  ========================= */
+  
+  .session {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  .session-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-bottom: 55px;
+  }
+  
+  .progress {
+    color: #a09789;
+  
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+  
+  .text-button {
+    padding: 3px 0;
+  
+    border: none;
+    background: none;
+  
+    color: #81776a;
+  
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  
+    cursor: pointer;
+  }
+  
+  .text-button.danger {
+    color: #9b7770;
+  }
+  
+  .question-number {
+    margin-bottom: 12px;
+  
+    color: #a69c8d;
+  
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  
+  .question {
+    margin: 0 0 24px;
+  
+    color: #453e35;
+  
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  
+  .session textarea {
+    display: block;
+  
+    width: 100%;
+    min-height: 190px;
+  
+    padding: 14px 2px;
+  
+    border: none;
+    border-bottom: 1px solid rgba(80, 65, 45, 0.22);
+  
+    background: rgba(255, 255, 255, 0.08);
+  
+    color: #40392f;
+  
+    font-size: 16px;
+    line-height: 1.8;
+  
+    outline: none;
+  
+    resize: vertical;
+  }
+  
+  .session textarea:focus {
+    border-bottom-color: #716759;
+  }
+  
+  .session-actions {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-top: 28px;
+  }
+  
+  .session-bottom-actions {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  
+    margin-top: 40px;
+  }
+  
+  
+  /* =========================
+     PAGE HEADING
+  ========================= */
+  
+  .content {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  
+  .page-heading {
+    margin-bottom: 30px;
+  }
+  
+  .page-kicker {
+    margin-bottom: 6px;
+  
+    color: #aaa092;
+  
+    font-size: 9px;
+    letter-spacing: 0.15em;
+  }
+  
+  .page-heading h2 {
+    margin: 0;
+  
+    color: #4a4339;
+  
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  
+  /* =========================
+     ANSWERS
+  ========================= */
+  
+  .answer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .answer-card {
+    padding: 18px 0;
+  
+    border-bottom: 1px solid rgba(80, 65, 45, 0.12);
+  }
+  
+  .answer-number {
+    margin-bottom: 8px;
+  
+    color: #aaa092;
+  
+    font-size: 10px;
+    letter-spacing: 0.08em;
+  }
+  
+  .answer-question {
+    margin-bottom: 10px;
+  
+    color: #5c5448;
+  
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  .answer-text {
+    color: #40392f;
+  
+    font-size: 15px;
+    line-height: 1.8;
+  
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .answer-text.empty {
+    color: #aaa195;
+  }
+  
+  .review-actions {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-top: 32px;
+  }
+  
+  .review-discard {
+    display: block;
+    margin: 26px auto 0;
+  }
+  
+  
+  /* =========================
+     TITLE
+  ========================= */
+  
+  .title-field {
+    margin-bottom: 24px;
+  }
+  
+  .title-field label {
+    display: block;
+  
+    margin-bottom: 8px;
+  
+    color: #756b5d;
+  
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  
+  .title-field input {
+    width: 100%;
+  
+    padding: 11px 12px;
+  
+    border: none;
+    border-bottom: 1px solid rgba(80, 65, 45, 0.25);
+  
+    background: rgba(255, 255, 255, 0.22);
+  
+    color: #3f3930;
+  
+    font-size: 15px;
+  
+    outline: none;
+  }
+  
+  .title-field input:focus {
+    border-bottom-color: #6d6254;
+  }
+  
+  .title-field input::placeholder {
+    color: #aaa195;
+  }
+  
+  
+  /* =========================
+     RECORDS
+  ========================= */
+  
+  .records-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .record-item {
+    display: flex;
+    align-items: stretch;
+  
+    border-bottom: 1px solid rgba(80, 65, 45, 0.12);
+  }
+  
+  .record-main {
+    flex: 1;
+    min-width: 0;
+  
+    padding: 17px 0;
+  
+    border: none;
+    background: none;
+  
+    text-align: left;
+  
+    cursor: pointer;
+  }
+  
+  .record-title {
+    margin-bottom: 5px;
+  
+    color: #3f3930;
+  
+    font-size: 15px;
+    line-height: 1.5;
+  
+    word-break: break-word;
+  }
+  
+  .record-date {
+    color: #978d7e;
+  
+    font-size: 10px;
+    letter-spacing: 0.04em;
+  }
+  
+  .record-status {
+    margin-top: 5px;
+  
+    color: #777064;
+  
+    font-size: 10px;
+  }
+  
+  .record-status.incomplete {
+    color: #9d9386;
+  }
+  
+  .delete-button {
+    width: 42px;
+  
+    border: none;
+    background: none;
+  
+    color: #a69b8c;
+  
+    font-size: 20px;
+    font-weight: 300;
+  
+    cursor: pointer;
+  }
+  
+  .records-empty {
+    padding: 40px 0;
+  
+    color: #a09789;
+  
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  
+  /* =========================
+     CALENDAR
+  ========================= */
+  
+  .calendar-page {
+    max-width: 620px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin-bottom: 12px;
+  }
+  
+  .calendar-title {
+    color: #51493e;
+  
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  
+  .calendar-arrow {
+    width: 38px;
+    height: 38px;
+  
+    padding: 0;
+  
+    border: none;
+    background: none;
+  
+    color: #766c5f;
+  
+    font-size: 25px;
+    font-weight: 300;
+  
+    cursor: pointer;
+  }
+  
+  .today-button {
+    display: block;
+  
+    margin: 0 auto 20px;
+  
+    padding: 5px 10px;
+  
+    border: none;
+    border-bottom: 1px solid rgba(80, 65, 45, 0.18);
+  
+    background: none;
+  
+    color: #8f8577;
+  
+    font-size: 10px;
+    letter-spacing: 0.08em;
+  
+    cursor: pointer;
+  }
+  
+  .calendar-weekdays {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(7, minmax(0, 1fr));
+  
+    margin-bottom: 2px;
+  }
+  
+  .calendar-weekday {
+    min-width: 0;
+  
+    padding: 7px 2px;
+  
+    color: #9b9182;
+  
+    font-size: 9px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  
+  .calendar-grid {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(7, minmax(0, 1fr));
+  
+    border-top: 1px solid rgba(80, 65, 45, 0.12);
+    border-left: 1px solid rgba(80, 65, 45, 0.12);
+  }
+  
+  .calendar-day {
+    appearance: none;
+  
+    position: relative;
+  
+    width: 100%;
+    min-width: 0;
+  
+    min-height: 62px;
+  
+    padding: 7px;
+  
+    border: none;
+    border-right: 1px solid rgba(80, 65, 45, 0.12);
+    border-bottom: 1px solid rgba(80, 65, 45, 0.12);
+  
+    background: rgba(250, 246, 236, 0.42);
+  
+    color: inherit;
+  
+    font: inherit;
+    text-align: left;
+  
+    cursor: default;
+  
+    overflow: hidden;
+  }
+  
+  .calendar-day.other-month {
+    background: rgba(245, 239, 228, 0.25);
+  }
+  
+  .calendar-day.other-month .calendar-date {
+    color: #c3bbae;
+  }
+  
+  .calendar-day.today {
+    background: rgba(255, 255, 255, 0.48);
+  }
+  
+  .calendar-day.has-records {
+    cursor: pointer;
+  }
+  
+  .calendar-date {
+    display: block;
+  
+    color: #736a5d;
+  
+    font-size: 11px;
+  }
+  
+  .calendar-day.today .calendar-date {
+    font-weight: 600;
+    color: #4f473d;
+  }
+  
+  .calendar-record-dot {
+    position: absolute;
+  
+    left: 50%;
+    bottom: 9px;
+  
+    width: 10px;
+    height: 10px;
+  
+    transform: translateX(-50%);
+  
+    border-radius: 50%;
+  
+    border: 1px solid #766c5f;
+  
+    background: transparent;
+  }
+  
+  .calendar-record-dot.complete {
+    background: #766c5f;
+  }
+  
+  .calendar-record-dot.incomplete {
+    background: rgba(255, 252, 244, 0.9);
+  }
+  
+  
+  /* =========================
+     DATE RECORD MODAL
+  ========================= */
+  
+  .date-modal-backdrop {
+    position: fixed;
+  
+    inset: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 24px;
+  
+    background: rgba(55, 48, 40, 0.25);
+  
+    z-index: 50;
+  }
+  
+  .date-modal {
+    width: 100%;
+    max-width: 390px;
+    max-height: min(70vh, 560px);
+  
+    padding: 24px 20px;
+  
+    overflow-y: auto;
+  
+    background: #faf6ec;
+  
+    box-shadow:
+      0 18px 50px rgba(60, 50, 40, 0.16);
+  
+    border: 1px solid rgba(80, 65, 45, 0.08);
+  }
+  
+  .date-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+    margin-bottom: 18px;
+  }
+  
+  .date-selection-label {
+    margin-bottom: 5px;
+  
+    color: #9b9182;
+  
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+  
+  .date-selection-date {
+    color: #51493e;
+  
+    font-size: 16px;
+  }
+  
+  .close-button {
+    flex: 0 0 auto;
+  
+    width: 34px;
+    height: 34px;
+  
+    padding: 0;
+  
+    border: none;
+    background: none;
+  
+    color: #8d8375;
+  
+    font-size: 22px;
+    font-weight: 300;
+  
+    cursor: pointer;
+  }
+  
+  .date-records {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .date-record {
+    display: flex;
+    align-items: center;
+  
+    width: 100%;
+  
+    min-height: 48px;
+  
+    padding: 10px 0;
+  
+    border: none;
+    border-bottom: 1px solid rgba(80, 65, 45, 0.1);
+  
+    background: none;
+  
+    color: #554d42;
+  
+    text-align: left;
+  
+    cursor: pointer;
+  }
+  
+  .date-record-status {
+    width: 28px;
+    flex: 0 0 28px;
+  }
+  
+  .small-record-dot {
+    display: inline-block;
+  
+    width: 8px;
+    height: 8px;
+  
+    border-radius: 50%;
+  
+    border: 1px solid #766c5f;
+  
+    background: transparent;
+  }
+  
+  .small-record-dot.complete {
+    background: #766c5f;
+  }
+  
+  .date-record-number {
+    flex: 1;
+  
+    min-width: 0;
+  
+    padding-right: 10px;
+  
+    font-size: 13px;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .date-record-arrow {
+    color: #9c9284;
+  
+    font-size: 14px;
+  }
+  
+  
+  /* =========================
+     DELETE MODAL
+  ========================= */
+  
+  .modal-backdrop {
+    position: fixed;
+  
+    inset: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 24px;
+  
+    background: rgba(50, 44, 36, 0.22);
+  
+    z-index: 100;
+  }
+  
+  .modal {
+    width: 100%;
+    max-width: 340px;
+  
+    padding: 28px 24px;
+  
+    background: #faf6ec;
+  
+    box-shadow:
+      0 12px 40px rgba(60, 50, 40, 0.12);
+  }
+  
+  .modal-message {
+    margin-bottom: 24px;
+  
+    color: #51493e;
+  
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .danger-button {
+    border-color: #8d6e67;
+    background: #8d6e67;
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 600px) {
+  
+    .header {
+      padding: 18px 16px 8px;
+    }
+  
+    .header-nav {
+      gap: 12px;
+    }
+  
+    .main {
+      padding:
+        16px
+        16px
+        50px;
+    }
+  
+    .home {
+      min-height: calc(100vh - 80px);
+  
+      padding-top: 45px;
+      padding-bottom: 30px;
+    }
+  
+    .home h1 {
+      font-size: 27px;
+    }
+  
+    .language {
+      margin-top: 40px;
+    }
+  
+    .language-buttons {
+      gap: 12px;
+    }
+  
+    .language-buttons button {
+      font-size: 10px;
+    }
+  
+    .about-hotori {
+      max-width: 310px;
+  
+      margin-top: 26px;
+      padding: 0 4px;
+  
+      font-size: 10px;
+      line-height: 1.65;
+    }
+  
+    .about-title {
+      font-size: 9px;
+    }
+  
+    .about-text {
+      max-width: 290px;
+    }
+  
+    .question {
+      font-size: 18px;
+    }
+  
+    .session textarea {
+      min-height: 180px;
+      font-size: 16px;
+    }
+  
+    .calendar-day {
+      min-height: 55px;
+      padding: 5px;
+    }
+  
+    .calendar-record-dot {
+      bottom: 7px;
+    }
+  
+    .calendar-weekday {
+      font-size: 8px;
+    }
+  
+    .calendar-date {
+      font-size: 10px;
+    }
+  
+    .date-modal-backdrop {
+      padding: 18px;
+    }
+  
+    .date-modal {
+      max-height: 72vh;
+      padding: 22px 18px;
+    }
+  }
