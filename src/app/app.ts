@@ -55,15 +55,15 @@ export class App {
       '何が起こりましたか？',
       'そのとき、どんな気持ちでしたか？',
       'そのとき、どんな考えが浮かびましたか？',
-      'なぜ、そう考えたのでしょう？',
+      'そう考えた理由や根拠は、何でしょう？',
       '別の見方をすると、どう考えられますか？',
       '今は、どんな気持ちですか？'
     ],
     en: [
       'What happened?',
       'How did you feel at that moment?',
-      'What thought came to your mind?',
-      'Why did you think that?',
+      'What thought came to your mind at that moment?',
+      'What reasons or evidence support that thought?',
       'Is there another way to look at it?',
       'How do you feel now?'
     ],
@@ -71,7 +71,7 @@ export class App {
       '发生了什么？',
       '当时你有什么感受？',
       '当时你脑中浮现了什么想法？',
-      '为什么会这样想？',
+      '为什么会这样想？有什么理由或依据？',
       '换一个角度来看，可以怎么想？',
       '现在有什么感受？'
     ]
